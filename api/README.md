@@ -2,14 +2,16 @@
 
 Este é um REST API, o qual é acessado viu protocolo HTTP, utilizando as URLs.
 
-# Base URL
 ___
+# Base URL
+
 ```
 http://localhost:3333
 ```
 
-# Users CRUD
 ___
+# Users CRUD
+
 ## Leitura
 
 ### Todos os users
@@ -97,8 +99,9 @@ Exemplo do corpo da requisição:
 }
 ```
 
-# Perguntas CRUD
 ___
+# Perguntas CRUD
+
 ## Leitura
 
 ### Todas as perguntas de um user
@@ -213,8 +216,9 @@ Exemplo do corpo da requisição:
 }
 ```
 
-# Comentários CRUD
 ___
+# Comentários CRUD
+
 ## Leitura
 
 ### Todos os comentários de um User
@@ -313,8 +317,9 @@ Exemplo do corpo da requisição:
 }
 ```
 
-# Cursos CRUD
 ___
+# Cursos CRUD
+
 ## Leitura
 
 ### Todos os cursos de um user

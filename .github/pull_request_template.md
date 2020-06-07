@@ -1,0 +1,13 @@
+# Título da subtarefa
+
+link da subtarefa
+
+## Quais foram as modificações?
+
+* Eu adicionei ...
+* Eu alterei ...
+
+## Como testar?
+
+* É preciso entrar em ...
+* Clicar em ...

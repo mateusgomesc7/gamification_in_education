@@ -1,39 +1,23 @@
 <template>
   <v-card class="elevation-12">
     <v-toolbar
-      color="primary"
+      color="success"
       dark
       flat
     >
-      <v-toolbar-title>Login</v-toolbar-title>
-      <v-spacer />
-      <v-tooltip bottom>
-        <template v-slot:activator="{ on }">
-          <v-btn
-            :href="source"
-            icon
-            large
-            target="_blank"
-            v-on="on"
-          >
-            <v-icon>mdi-code-tags</v-icon>
-          </v-btn>
-        </template>
-        <span>Source</span>
-      </v-tooltip>
+      <v-toolbar-title>Entrar no Gamification</v-toolbar-title>
     </v-toolbar>
     <v-card-text>
       <v-form>
         <v-text-field
-          label="Login"
+          label="Digite o usuário ou e-mail"
           name="login"
           prepend-icon="mdi-account"
           type="text"
         />
-
         <v-text-field
           id="password"
-          label="Password"
+          label="Digite a senha"
           name="password"
           prepend-icon="mdi-lock"
           type="password"
@@ -42,8 +26,8 @@
     </v-card-text>
     <v-card-actions>
       <v-spacer />
-      <v-btn color="primary">
-        Login
+      <v-btn color="success" to="/home">
+        Entrar
       </v-btn>
     </v-card-actions>
   </v-card>
@@ -54,7 +38,3 @@ export default {
 
 }
 </script>
-
-<style>
-
-</style>

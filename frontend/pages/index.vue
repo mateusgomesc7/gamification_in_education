@@ -26,6 +26,7 @@
 import LoginForm from '~/components/login/LoginForm.vue'
 
 export default {
+  layout: 'login',
   components: {
     LoginForm
   },

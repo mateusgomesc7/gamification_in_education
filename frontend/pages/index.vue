@@ -1,23 +1,21 @@
 <template>
   <v-app id="inspire">
-    <v-main>
-      <v-container
-        class="fill-height"
-        fluid
+    <v-main
+      class="fill-height"
+      fluid
+    >
+      <v-row
+        align="center"
+        justify="center"
       >
-        <v-row
-          align="center"
-          justify="center"
+        <v-col
+          cols="12"
+          sm="8"
+          md="4"
         >
-          <v-col
-            cols="12"
-            sm="8"
-            md="4"
-          >
-            <LoginForm />
-          </v-col>
-        </v-row>
-      </v-container>
+          <LoginForm />
+        </v-col>
+      </v-row>
     </v-main>
   </v-app>
 </template>
@@ -31,7 +29,11 @@ export default {
     LoginForm
   },
   props: {
-    source: String
+    source: {
+      type: String,
+      required: true,
+      default: ''
+    }
   }
 }
 </script>

@@ -7,11 +7,11 @@
       <v-card-title class="d-flex align-center panel-header grey darken-1">
         <v-icon class="mr-2">
           mdi-pencil
-        </v-icon> Matemática
+        </v-icon> {{ title }}
       </v-card-title>
       <v-card-text class="mt-3">
         <div>
-          What is Lorem Ipsum?Lorem Ipsum is simply dummy text of the printing and typesetting industry. ...
+          {{ question }}
         </div>
       </v-card-text>
       <v-card-actions>
@@ -25,6 +25,17 @@
 
 <script>
 export default {
-
+  props: {
+    title: {
+      type: String,
+      required: true,
+      default: ''
+    },
+    question: {
+      type: String,
+      required: true,
+      default: ''
+    }
+  }
 }
 </script>

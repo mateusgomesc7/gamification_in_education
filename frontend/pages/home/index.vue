@@ -10,19 +10,9 @@
             <cardWhatQuestion />
           </v-col>
         </v-row>
-        <v-row>
+        <v-row v-for="n in list" :key="n">
           <v-col>
-            <cardQuestion />
-          </v-col>
-        </v-row>
-        <v-row>
-          <v-col>
-            <cardQuestion />
-          </v-col>
-        </v-row>
-        <v-row>
-          <v-col>
-            <cardQuestion />
+            <cardQuestion :title="n.title" :question="n.question" />
           </v-col>
         </v-row>
       </v-col>
@@ -50,6 +40,11 @@ export default {
   components: {
     cardWhatQuestion,
     cardQuestion
+  },
+  data () {
+    return {
+      list: [{ title: 'Matematica', question: 'qual é a pergunta' }, { title: 'Portugues', question: 'qual é a pergunta' }, { title: 'Fisica', question: 'qual é a pergunta' }]
+    }
   }
 }
 </script>
